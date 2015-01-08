@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D09F22BA-C08E-4ECE-911B-F4C21A02FE7C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameRayBurst.FtLinq</RootNamespace>
+    <AssemblyName>GameRayBurst.FtLinq</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\GameRayBurst.FtLinq.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\GameRayBurst.FtLinq.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FtlConfiguration.cs" />
+    <Compile Include="FtlEnumerable.cs" />
+    <Compile Include="FtlOptionExtensions.cs" />
+    <Compile Include="FtlOrderedEnumerable.cs" />
+    <Compile Include="Generator.cs" />
+    <Compile Include="IFtlOrderedEnumerable.cs" />
+    <Compile Include="IndexingGenerator.cs" />
+    <Compile Include="QueryCompiledEventArgs.cs" />
+    <Compile Include="Range.cs" />
+    <Compile Include="Recompiler\AggregationMethodBase.cs" />
+    <Compile Include="Recompiler\Enumerable\Aggregate.cs" />
+    <Compile Include="Recompiler\Enumerable\All.cs" />
+    <Compile Include="Recompiler\Enumerable\Any.cs" />
+    <Compile Include="Recompiler\Enumerable\Average.cs" />
+    <Compile Include="Recompiler\Enumerable\Contains.cs" />
+    <Compile Include="Recompiler\Enumerable\Count.cs" />
+    <Compile Include="Recompiler\Enumerable\Distinct.cs" />
+    <Compile Include="Recompiler\Enumerable\ElementAt.cs" />
+    <Compile Include="Recompiler\Enumerable\ElementSelectorImpl.cs" />
+    <Compile Include="Recompiler\Enumerable\First.cs" />
+    <Compile Include="Recompiler\Enumerable\GroupBy.cs" />
+    <Compile Include="Recompiler\Enumerable\Last.cs" />
+    <Compile Include="Recompiler\Enumerable\OrderBy.cs" />
+    <Compile Include="Recompiler\Enumerable\Single.cs" />
+    <Compile Include="Recompiler\Enumerable\ToArray.cs" />
+    <Compile Include="Recompiler\Enumerable\ToLookup.cs" />
+    <Compile Include="Recompiler\GroupingAggregationMethod.cs" />
+    <Compile Include="Recompiler\Enumerable\MinMax.cs" />
+    <Compile Include="Recompiler\Enumerable\OfType.cs" />
+    <Compile Include="Recompiler\Enumerable\Skip.cs" />
+    <Compile Include="Recompiler\Enumerable\SkipWhile.cs" />
+    <Compile Include="Recompiler\Enumerable\Take.cs" />
+    <Compile Include="Recompiler\Enumerable\TakeWhile.cs" />
+    <Compile Include="Recompiler\Enumerable\ToDictionary.cs" />
+    <Compile Include="Recompiler\FtlEnumerable\GeneratorIterationMethod.cs" />
+    <Compile Include="Recompiler\FtlEnumerable\RangeIterationMethod.cs" />
+    <Compile Include="Recompiler\FtlEnumerable\RepetitionIterationMethod.cs" />
+    <Compile Include="Recompiler\FtlEnumerable\ToSet.cs" />
+    <Compile Include="Recompiler\Iterators\IterationStateBase.cs" />
+    <Compile Include="Recompiler\RecompilationState.cs" />
+    <Compile Include="Recompiler\Enumerable\Cast.cs" />
+    <Compile Include="Recompiler\Enumerable\SelectMany.cs" />
+    <Compile Include="Recompiler\TransformMethodBase.cs" />
+    <Compile Include="Recompiler\TupleStructBuilder.cs" />
+    <Compile Include="Recompiler\Util\EnumerableUtil.cs" />
+    <Compile Include="Recompiler\Enumerable\Sum.cs" />
+    <Compile Include="Recompiler\Enumerable\Where.cs" />
+    <Compile Include="Recompiler\IMethod.cs" />
+    <Compile Include="Recompiler\ITransformMethod.cs" />
+    <Compile Include="Recompiler\Enumerable\Select.cs" />
+    <Compile Include="Recompiler\Iterators\ArrayIterationMethod.cs" />
+    <Compile Include="Recompiler\Util\ExpressionReplacer.cs" />
+    <Compile Include="Recompiler\Util\ExpressionUtil.cs" />
+    <Compile Include="Ftl.cs" />
+    <Compile Include="FtlException.cs" />
+    <Compile Include="Recompiler\IAggregationMethod.cs" />
+    <Compile Include="Recompiler\Iterators\EnumerableIterationMethod.cs" />
+    <Compile Include="Recompiler\IIterationMethod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recompiler\Enumerable\ToList.cs" />
+    <Compile Include="Recompiler\Iterators\ListIterationMethod.cs" />
+    <Compile Include="Recompiler\MethodRegistry.cs" />
+    <Compile Include="Recompiler\Util\ExpressionVisitor.cs" />
+    <Compile Include="Recompiler\Util\Grouping.cs" />
+    <Compile Include="Recompiler\Util\LinqParser.cs" />
+    <Compile Include="Recompiler\Util\Lookup.cs" />
+    <Compile Include="Recompiler\Util\ReflectionUtil.cs" />
+    <Compile Include="Repetition.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
